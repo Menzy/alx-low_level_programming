@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Info - prints all the numbers of base 16 in lowercase, followed by a new line.
+ * Info - prints all the numbers of base 16 in lowercase
  * Return: Always 0 (success)
  */
 int main(void)

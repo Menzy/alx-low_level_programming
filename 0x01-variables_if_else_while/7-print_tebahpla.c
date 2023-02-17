@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * info - prints the lowercase alphabet in reverse, followed by a new line.
+ * info - prints the lowercase alphabet in reverse
  * Return: Always 0 (success)
  */
 int main(void)

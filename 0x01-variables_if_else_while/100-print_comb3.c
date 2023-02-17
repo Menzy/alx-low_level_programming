@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Info - prints all possible different combinations of two digits
+ * Info - prints all combinations of two digits
  * Return: Always 0 (success)
  */
 int main(void)

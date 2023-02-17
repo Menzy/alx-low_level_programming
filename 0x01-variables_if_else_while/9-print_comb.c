@@ -2,7 +2,7 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * Info - prints all possible combinations of single-digit numbers.
+ * Info - prints all combinations of single numbers
  * Return: Always 0 (success)
  */
 int main(void)
