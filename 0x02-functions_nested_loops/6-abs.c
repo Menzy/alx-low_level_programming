@@ -2,6 +2,7 @@
 /**
  * _abs - function to get the absolute value of a number n
  * @n: nth absolute power
+ * Return: return the absolute value
  */
 int _abs(int n)
 {
