@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_sign - print if the sign of a number is + or -
  * @n: number to be checked
