@@ -10,19 +10,19 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i, j, k;
+	int i, j, m;
 
 	i = j = 0;
 
-	for (k = 0; m < n; k++)
+	for (m = 0; m < n; m++)
 	{
-		if (k == 98)
+		if (m == 98)
 		{
 			break;
 		}
 		else
 		{
-			dest[k] = *src++;
+			dest[m] = *src++;
 		}
 	}
 	while (dest[i] != '\0')
