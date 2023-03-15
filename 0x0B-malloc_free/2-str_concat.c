@@ -7,7 +7,6 @@
  * @s2: second string
  *Return: pointer to new space in memory
  */
- 
 char *str_concat(char *s1, char *s2)
 {
 	char *concat_str;
