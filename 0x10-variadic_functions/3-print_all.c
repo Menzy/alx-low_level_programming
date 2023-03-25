@@ -9,21 +9,21 @@
  */
 void print_all(const char * const format, ...)
 {
-	int a = 0;
+	int i = 0;
 	char *s, *cspace = "";
 	va_list arglist;
 
 	va_start(arglist, format);
 	if (format != NULL)
 	{
-		while (format[a] != '\0')
+		while (format[i] != '\0')
 		{
-			switch (format[a])
+			switch (format[i])
 			{
 			case 'c':
 				printf("%s%c", cspace, va_arg(arglist, int));
 				break;
-			case 'a':
+			case 'i':
 				printf("%s%d", cspace, va_arg(arglist, int));
 				break;
 			case 'f':
@@ -36,11 +36,11 @@ void print_all(const char * const format, ...)
 				printf("%s%s", cspace, s);
 				break;
 			default:
-				a++;
+				i++;
 				continue;
 			}
 			cspace = ", ";
-			a++;
+			i++;
 		}
 	}
 	printf("\n");
