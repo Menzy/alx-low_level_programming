@@ -1,16 +1,12 @@
 #include "lists.h"
-#include <string.h>
 
 /**
- * add_node - Adds a new node at the beginning
- *            of a list_t list.
- * @head: A pointer to the head of the list_t list.
- * @str: The string to be added to the list_t list.
+ * add_node - adds a new node at the beginning of a list_t list.
+ * @head: double pointer
+ * @str: string
  *
- * Return: If the function fails - NULL.
- *         Otherwise - the address of the new element.
+ * Return: number of nodes.
  */
-
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
@@ -30,6 +26,5 @@ list_t *add_node(list_t **head, const char *str)
 	new->len = strlen(str);
 	new->next = *head;
 	*head = new;
-
 	return (new);
 }
