@@ -1,6 +1,9 @@
-0x14. C - Bit manipulation
+#0x14. C - Bit manipulation
+
+##Tasks
 
 [0. 0](https://github.com/Menzy/alx-low_level_programming/blob/master/0x14-bit_manipulation/0-binary_to_uint.c)
+
 Write a function that converts a binary number to an unsigned int.
 
 Prototype: unsigned int binary_to_uint(const char *b);
@@ -9,7 +12,8 @@ Return: the converted number, or 0 if
 there is one or more chars in the string b that is not 0 or 1
 b is NULL
 
-1. 1
+[1. 1](https://github.com/Menzy/alx-low_level_programming/blob/master/0x14-bit_manipulation/1-print_binary.c)
+
 Write a function that prints the binary representation of a number.
 
 Prototype: void print_binary(unsigned long int n);
@@ -18,7 +22,7 @@ You are not allowed to use arrays
 You are not allowed to use malloc
 You are not allowed to use the % or / operators
 
-2. 10
+[2. 10](https://github.com/Menzy/alx-low_level_programming/blob/master/0x14-bit_manipulation/2-get_bit.c)
 Write a function that returns the value of a bit at a given index.
 
 Prototype: int get_bit(unsigned long int n, unsigned int index);
