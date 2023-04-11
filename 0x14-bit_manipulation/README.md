@@ -1,6 +1,8 @@
-#0x14. C - Bit manipulation
+#
+0x14. C - Bit manipulation
 
-##Tasks
+##
+Tasks
 
 [0. 0](https://github.com/Menzy/alx-low_level_programming/blob/master/0x14-bit_manipulation/0-binary_to_uint.c)
 
