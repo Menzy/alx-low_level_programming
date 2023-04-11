@@ -1,6 +1,6 @@
 0x14. C - Bit manipulation
 
-0. 0
+[0. 0](https://github.com/Menzy/alx-low_level_programming/blob/master/0x14-bit_manipulation/0-binary_to_uint.c)
 Write a function that converts a binary number to an unsigned int.
 
 Prototype: unsigned int binary_to_uint(const char *b);
