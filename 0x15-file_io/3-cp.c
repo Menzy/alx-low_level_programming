@@ -17,7 +17,8 @@ int main(int argc, char **argv)
 
 	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]), exit(98);
 
 	dest_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (dest_fd == -1)
@@ -31,7 +32,8 @@ int main(int argc, char **argv)
 	}
 
 	if (r_count == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", argv[1]), exit(98);
 
 	st1 = close(src_fd);
 	if (st1 == -1)
