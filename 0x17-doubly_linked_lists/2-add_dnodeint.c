@@ -22,12 +22,11 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	new->n = n;
 	/* Set the next pointer of the new node to the current head */
 	new->next = *head;
-	/* Set the previous pointer of the new node to NULL \
-	(since it's added at the beginning) */
+
+	/* Set the previous pointer of the new node to NULL */
 	new->prev = NULL;
 
-	/* If the list is not empty, set the previous pointer \
-	 the current head to the new node */
+	/* If the list is not empty, set the previous pointer */
 	if (*head != NULL)
 		(*head)->prev = new;
 
