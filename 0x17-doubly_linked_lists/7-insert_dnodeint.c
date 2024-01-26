@@ -16,7 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 	new->n = n;	/* Insert n value into the new node */
-	if (*h == NULL) 	/* If the list is empty, insert at the beginning */
+	if (*h == NULL) /* If the list is empty, insert at the beginning */
 	{
 		*h = new;
 		return (new);
