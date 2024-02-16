@@ -6,7 +6,7 @@
  * @key: Key to add, should not be an empty string.
  * @value: Value of the key.
  *
- * Return: 0 (success) and 1 (fail).
+ * Return: 0 (success) and 1 (fail)
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)

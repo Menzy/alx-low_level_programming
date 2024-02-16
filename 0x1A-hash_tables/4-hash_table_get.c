@@ -5,7 +5,7 @@
  * @ht: Hash table being searched.
  * @key: Key being sought.
  * Return: Returns the value of the element,
- *         or NULL if the key was not found.
+ *         or NULL if the key was not found
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
