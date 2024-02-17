@@ -1,27 +1,43 @@
 #include "hash_tables.h"
-#include <string.h>
-/**
- * hash_table_get - Retrieves value associated with @key.
- * @ht: Hash table from where @key will be retrieved.
- * @key: Key from which the value will be retrieved.
- * Return: Value associated with key.
- **/
 
+/**
+ * hash_table_get - Retrieves the value associated with a key.
+ * @ht: Pointer to the hash table.
+ * @key: Key (string) in the key/value pair.
+ *
+ * Return: The value associated with the element, or NULL if the key is not found.
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_node_t *node;
-	unsigned long int index;
+	hash_node_t *hashnode;
+	unsigned long int i;
 
-	if (ht == NULL || key == NULL || *key == '\0')
+	/* Return NULL if the hash table is NULL */
+	if (ht == NULL)
 		return (NULL);
 
-	index = key_index((const unsigned char *)key, ht->size);
-	if (index >= ht->size)
+	/* Return NULL if the key is an empty string or NULL */
+	if (key == NULL || key[0] == '\0')
 		return (NULL);
 
-	node = ht->array[index];
-	while (node && strcmp(node->key, key) != 0)
-		node = node->next;
+	/* Get the index for the key */
+	i = key_index((unsigned char *)key, ht->size);
 
-	return ((node == NULL) ? NULL : node->value);
+	/* Get the hash node at the index */
+	hashnode = ht->array[i];
+
+	/* If the hash node is NULL, the key is not found */
+	if (hashnode == NULL)
+		return (NULL);
+
+	/* Traverse the linked list to find the key */
+	while (hashnode != NULL)
+	{
+		if (strcmp(hashnode->key, key) == 0)
+			return (hashnode->value);
+		hashnode = hashnode->next;
+	}
+
+	/* Return NULL if the key is not found */
+	return (NULL);
 }
